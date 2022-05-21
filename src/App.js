@@ -3,8 +3,8 @@ import { useRef, useEffect, useState } from 'react';
 
 import * as tf from "@tensorflow/tfjs";
 import * as qna from "@tensorflow-models/qna";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import Loader from "react-loader-spinner";
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+// import Loader from "react-loader-spinner";
 import { Fragment } from 'react';
 
 const App = () => {
