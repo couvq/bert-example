@@ -9,9 +9,13 @@ import { Fragment } from 'react';
 
 const App = () => {
 
-  // setup references and state hook
+  // 2. setup references and state hooks
   const passageRef = useRef(null);
   const questionRef = useRef(null);
+
+  // 3. Load TensorFlow.js model
+
+  //4. Handle Questions
 
 
   return (
