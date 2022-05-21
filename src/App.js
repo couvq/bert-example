@@ -13,6 +13,9 @@ const App = () => {
   const passageRef = useRef(null);
   const questionRef = useRef(null);
 
+  const [answer, setAnswer] = useState();
+  const [model, setModel] = useState(null);
+
   // 3. Load TensorFlow.js model
 
   //4. Handle Questions
