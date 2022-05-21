@@ -42,7 +42,28 @@ const App = () => {
 
 
   return (
-    <div>React App Build Using BERT TensorFlow.js Model</div>
+    <>
+      {
+        model == null ?
+        <div>
+          Model Loading...
+        </div>
+        :
+        <Fragment>
+          Passage 
+          <textarea ref={passageRef} rows="30" cols="100"></textarea>
+          Ask a Question 
+          <input ref={questionRef} onKeyPress={answerQuestion} size="80"></input>
+          Answers 
+          {
+            answer ? answer.map((ans, idx) => 
+              <div><b>Answer {idx + 1} -</b> {ans.text} {ans.score} </div>
+            )
+            : ""
+          }
+        </Fragment>
+      }
+    </>
   );
 }
 
