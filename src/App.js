@@ -4,7 +4,7 @@ const App = () => {
 
 
   return (
-    <div>Hello World!</div>
+    <div>React App Build Using BERT TensorFlow.js Model</div>
   );
 }
 
