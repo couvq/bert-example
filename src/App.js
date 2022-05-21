@@ -44,11 +44,11 @@ const App = () => {
   return (
     <>
       {
-        model == null ?
-        <div>
+        model == null ? // has our model loaded? if not show loader
+        <div> 
           Model Loading...
         </div>
-        :
+        :  // if our model HAS loaded
         <Fragment>
           Passage 
           <textarea ref={passageRef} rows="30" cols="100"></textarea>
