@@ -17,6 +17,15 @@ const App = () => {
   const [model, setModel] = useState(null);
 
   // 3. Load TensorFlow.js model
+  const loadModel = async () => {
+    const loadedModel = await qna.load();
+    setModel(loadedModel);
+    console.log('model Loaded');
+  }
+
+  useEffect(()=> {
+    loadModel();
+  }, []);
 
   //4. Handle Questions
 
