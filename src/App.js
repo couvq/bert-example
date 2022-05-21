@@ -5,6 +5,7 @@ import * as tf from "@tensorflow/tfjs";
 import * as qna from "@tensorflow-models/qna";
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 // import Loader from "react-loader-spinner";
+import Loader from 'react-loader';
 import { Fragment } from 'react';
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
         model == null ? // has our model loaded? if not show loader
         <div> 
           Model Loading...
+          <Loader></Loader>
         </div>
         :  // if our model HAS loaded
         <Fragment>
